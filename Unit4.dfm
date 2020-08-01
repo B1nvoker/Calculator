@@ -110,12 +110,15 @@ object Form4: TForm4
     end
     object Help1: TMenuItem
       Caption = 'Help'
+      OnClick = Help1Click
     end
     object Aboutus1: TMenuItem
       Caption = 'About us'
+      OnClick = Aboutus1Click
     end
     object Exit1: TMenuItem
       Caption = 'Exit'
+      OnClick = Exit1Click
     end
   end
 end

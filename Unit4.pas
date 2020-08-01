@@ -25,6 +25,9 @@ type
     Help1: TMenuItem;
     Aboutus1: TMenuItem;
     procedure Button1Click(Sender: TObject);
+    procedure Exit1Click(Sender: TObject);
+    procedure Aboutus1Click(Sender: TObject);
+    procedure Help1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,6 +40,10 @@ var
 implementation
 
 {$R *.dfm}
+
+uses Unit1, Unit3;
+
+
 
 
 procedure TForm4.Button1Click(Sender: TObject);
@@ -74,6 +81,19 @@ begin
   end;
   end;
 
+end;
+
+procedure TForm4.Exit1Click(Sender: TObject);
+begin
+  Form4.close;
+end;
+procedure TForm4.Aboutus1Click(Sender: TObject);
+begin
+  Form1.show;
+end;
+procedure TForm4.Help1Click(Sender: TObject);
+begin
+  Form3.Show;
 end;
 
 end.
